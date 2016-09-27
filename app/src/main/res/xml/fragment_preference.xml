@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MyPreferenceTitle">
+    <ListPreference
+        android:key="@string/units_preferenceKey"
+        android:title="Units"
+        android:summary="Choice can be degree or fahrenheit"
+        android:entries="@array/listArray"
+        android:entryValues="@array/listValues" />
+
+    <EditTextPreference
+        android:title="Location Id"
+        android:summary="Enter location id of the place for its location details"
+        android:key="@string/location_preferenceKey"
+        android:defaultValue="1254661"
+        android:singleLine="true"
+        android:inputType="numberDecimal"
+        />
+
+</PreferenceScreen>
